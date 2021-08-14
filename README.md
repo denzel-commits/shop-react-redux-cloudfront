@@ -1,11 +1,11 @@
 ## Manual configured s3/cloudfront resources
 
-S3 link: http://shop-react-cf.s3-website-eu-west-1.amazonaws.com
+S3 link: http://shop-react-cf.s3-website-eu-west-1.amazonaws.com<br />
 Cloudfront link: https://dvc2dmgu8yqfu.cloudfront.net
 
 ## Automated s3/cloudfront resources
 
-S3 link: http://shop-react-infra.s3-website-eu-west-1.amazonaws.com
+S3 link: http://shop-react-infra.s3-website-eu-west-1.amazonaws.com<br />
 Cloudfront link: https://da9r8ap8vw7x3.cloudfront.net
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
