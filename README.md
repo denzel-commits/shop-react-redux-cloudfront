@@ -1,7 +1,7 @@
 ## Manual configured s3/cloudfront resources
 
-S3 link: http://shop-react-cf.s3-website-eu-west-1.amazonaws.com<br />
-Cloudfront link: https://dvc2dmgu8yqfu.cloudfront.net
+S3 link: http://shop-react-manual.s3-website-eu-west-1.amazonaws.com<br />
+Cloudfront link: https://d387zzz8idjk01.cloudfront.net
 
 ## Automated s3/cloudfront resources
 
