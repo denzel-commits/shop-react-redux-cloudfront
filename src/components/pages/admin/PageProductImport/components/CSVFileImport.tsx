@@ -38,7 +38,7 @@ export default function CSVFileImport({url, title}: CSVFileImportProps) {
           name: encodeURIComponent(file.name)
         },
         headers: {
-          Authorization: 'Basic ZGVuemVsX2NvbW1pdHM6VEVTVF9QQVNTV09SRA=='
+          Authorization: 'Basic ZGVuemVsX1NvbW1pdHM6VEVTVF9QQVNTV09SRA=='
         }
       });
       console.log('File to upload: ', file.name);
