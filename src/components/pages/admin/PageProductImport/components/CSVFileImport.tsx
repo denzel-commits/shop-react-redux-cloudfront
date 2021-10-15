@@ -36,6 +36,9 @@ export default function CSVFileImport({url, title}: CSVFileImportProps) {
         url,
         params: {
           name: encodeURIComponent(file.name)
+        },
+        headers: {
+          Authorization: 'Basic ZGVuemVsX2NvbW1pdHM6VEVTVF9QQVNTV09SRA=='
         }
       });
       console.log('File to upload: ', file.name);
@@ -43,7 +46,7 @@ export default function CSVFileImport({url, title}: CSVFileImportProps) {
       const result = await fetch(response.data.url, {
         method: 'PUT',
         headers: {
-          'Content-Type': 'text/csv',
+          'Content-Type': 'text/csv'
         },
         body: file
       });
