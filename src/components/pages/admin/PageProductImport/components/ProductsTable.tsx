@@ -13,12 +13,13 @@ import Button from "@material-ui/core/Button";
 import {formatAsPrice} from "utils/utils";
 
 export default function ProductsTable() {
-  const [products, setProducts] = useState<any>([]);
+  const [products, setProducts] = useState<any>([])
 
   useEffect(() => {
     axios.get(`${API_PATHS.bff}/product`)
       .then(res => setProducts(res.data));
   }, []);
+
 
   const onDelete = (id: string) => {
     axios.delete(`${API_PATHS.bff}/product/${id}`)
