@@ -35,6 +35,56 @@ export default function Products() {
   const classes = useStyles();
   const [products, setProducts] = useState<Product[]>([]);
 
+  // если есть code получить id_token 
+  // если нет code id_token должен быть уже получен на час 
+
+  // ltknfm pfghjcs c id_token
+
+  // const client_id =  '20j62j5kvu2l4lbm5frct2epf';
+  // const client_secret =  'mao47fpopqg5t33qh0eiie89hsubaq53lo0315cg45v9kjuagji';
+  // const authUrl = 'https://bt-speakers-prodpool'; // 'https://bt-speakers-prodpool.auth.eu-west-1.amazoncognito.com/oauth2/token/';
+
+  // const redirectUri = 'https://da9r8ap8vw7x3.cloudfront.net/';
+
+  // const urlParams = new URLSearchParams(window.location.search);
+  // const userPoolCode = urlParams.get('code');
+
+  // console.log('userPoolCode', userPoolCode);
+
+  
+  // const basicAuthToken = Buffer.from(client_id + ':' + client_secret).toString('base64');  
+  // // get products using id_token
+  // const oauthParams = {
+  //     headers: {
+  //       'Authorization': 'Basic ' + basicAuthToken,
+  //       'Content-Type': 'application/x-www-form-urlencoded'
+  //     },
+  //     params: {
+  //       grant_type: 'authorization_code',
+  //       client_id: client_id,
+  //       redirect_uri: redirectUri,
+  //       code: userPoolCode
+  //     }
+  //   };
+
+
+  // console.log('headers', oauthParams);
+
+  // useEffect(() => {
+
+  //   axios.post(authUrl, null, oauthParams)
+  //      .then(res => {
+  //        console.log('oauth2', res.data);
+
+  //       // headers with Authorization Bearer res.id_token
+
+  //       //  axios.get(`${API_PATHS.bff}/products`, headers)
+  //       //  .then(res => setProducts(res.data));
+  //       //   }, [])
+
+  //      } );
+  // }, []);
+
   useEffect(() => {
     axios.get(`${API_PATHS.bff}/products`)
        .then(res => setProducts(res.data));
